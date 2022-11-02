@@ -1,0 +1,39 @@
+{
+    "data": {
+        "head": {
+            "title":"ここにタイトル",
+            "description":"ここに説明文",
+            "ogp":
+                {
+                    "title": "ここにタイトル",
+                    "type": "ここにタイプ",
+                    "url": "ここにurl",
+                    "image": "ここにイメージ",
+                    "site_name": "ここにサイトの名前",
+                    "description": "ここに説明"
+                },
+            "favicon": "../images/favicon.ico"
+        },
+        "header": {
+            "title":"ヘッダー",
+            "text": "ヘッダーのテキスト"
+        },
+        "main": [
+            {
+            "title":"ネスト（階層化）",
+            "text": "SCSSもdivのネストの階層化ができる。この段落は<em class='inner__text-em'>ネスト</em>でスタイルを当てている。<br>ん？この書き方はLESSとほぼまったく同じだ。<br><span class='inner__text--bikou'>インデントについても厳密でじゃでなくても解釈してくれるようだ（？）</span>"
+            },
+            {
+            "title":"親セレクタの参照",
+            "text": "おそらくLESSにはないSCSS専用の機能。ネストして「&」に擬似要素を付けると親セレクタを参照できる<br><span  class='inner__text-bikou'>この尾行欄につけている「※」印は「.bikou:before」ではなく「&:before」だけで済んでいる。 </span>"
+            },
+            {
+            "title":"TypeScriptで書いたクリックイベント",
+            "text": "<button class='inner__text-btn'>ここ押せワンワン</button>"
+            }
+        ],
+        "footer": {
+            "text":"フッター"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.u-desktop {
+  @include mq(md) {
+    display: none;
+  }
+}
