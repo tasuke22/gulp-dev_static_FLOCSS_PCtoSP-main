@@ -1,14 +1,9 @@
 @use "global" as *;
 
 .l-inner {
-  position: relative;
-  display: flex;
-  display: grid;
-  width: 100%;
-  max-width: $inner-width + $padding-pc * 2;
+  width: min($inner-width + $padding-pc * 2, 100%);
   padding-inline: rem(strip-unit($padding-pc));
   margin-inline: auto;
-  font-size: rem(12);
 
   @include mq(md) {
     padding-inline: rem(strip-unit($padding-sp));
