@@ -22,3 +22,10 @@
 - CSS設計はFLOCSS(https://github.com/hiloki/flocss )を採用
 - PCファースト
 - rem記述を前提
+
+
+## task
+- prettierrcとstylelintの競合
+- セミコロンが自動でつかない
+## memo
+- https://stylelint.io/migration-guide/to-14

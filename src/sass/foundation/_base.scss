@@ -1,7 +1,7 @@
 @use "global" as *;
 
 // インナー幅＋余白
-$breakpointInner: $innerWidth + strip-unit($padding-pc) * 2;
+$break-point-inner: $inner-width + strip-unit($padding-pc) * 2;
 
 // ルートフォント設定
 html {
@@ -9,8 +9,8 @@ html {
   font-size: 100%;
 
   // 768px ~ インナー幅＋余白
-  @media ( max-width: $breakpointInner ) {
-    font-size: vw(strip-unit($breakpointInner), 16);
+  @media (max-width: $break-point-inner) {
+    font-size: vw(strip-unit($break-point-inner), 16);
   }
 
   // 376px ~ 767px
@@ -33,10 +33,12 @@ body {
 // ホバー
 a,
 button {
-  transition: .3s;
+  transition: 0.3s;
+
   &:hover {
-    opacity: 0.7;
     cursor: pointer;
+    opacity: 0.7;
+
     @include mq(md) {
       opacity: 1;
     }
